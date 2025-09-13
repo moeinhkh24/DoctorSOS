@@ -19,7 +19,7 @@ class Doctor(BaseModel):
                                  choices=EDUCATION_TYPE,
                                  default=EDUCATION_TYPE[0][0]
                                  )
-    lisence = models.PositiveIntegerField()
+    license = models.PositiveIntegerField()
     biography = models.TextField()
     category = models.ForeignKey('core.Category', on_delete=models.PROTECT, related_name='doctors') #Category.doctors.all()
     achive = models.CharField(max_length=128, null=True, blank=True)
