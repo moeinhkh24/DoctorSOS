@@ -8,4 +8,4 @@ class BaseDoctorSerializer(serializers.ModelSerializer):
     clinics = ClinicInfoSerializer(many=True)
     class Meta:
         model = Doctor
-        fields = ['id' ,'user', 'clinics', 'education', 'lisence', 'biography', 'category', 'achive', 'rating']
+        fields = ['id' ,'user', 'name', 'clinics', 'education', 'lisence', 'biography', 'category', 'achive', 'rating']
